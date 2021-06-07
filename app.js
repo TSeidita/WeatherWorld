@@ -9,7 +9,7 @@ const key = "29a393d9438a495c90a204319210406"
 
 async function getAPI(input) {
     //Fetching the information
-    let data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${input}`)
+    let data = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${input}`)
         .then(data => data.json())
     //storing the data for easy access
     locData = (data.location);
